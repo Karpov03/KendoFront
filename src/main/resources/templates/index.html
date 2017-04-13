@@ -7,7 +7,11 @@
 
 </head>
 <body>
-<div th:include="fragments/js :: jquerys"></div>
-<div th:include="fragments/js :: bootstrap"></div>
+	<div th:include="fragments/js :: css"></div>
+	<div th:include="fragments/js :: js"></div>
+
+	<div ng-app="app" ng-controller="MyCtrl">
+		<select kendo-drop-down-list=" " k-options="customOptions" k-ng-delay="customOptions.dataSource"></select>
+	</div>
 </body>
 </html>
